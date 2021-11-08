@@ -4,7 +4,10 @@ import React from 'react';
 class Clock extends React.Component{
     constructor(props){
         super(props);
-        this.state = {date: new Date()};
+        this.state = {
+            date: new Date(),
+            comment: "Hello!"
+        };
     }
     componentDidMount(){
         this.timeID = setInterval(
@@ -17,7 +20,8 @@ class Clock extends React.Component{
     }
     tick() {
         this.setState({
-            date: new Date()
+            date: new Date(),
+            comment: "Hi!"
         });
     }
     render(){
@@ -25,6 +29,7 @@ class Clock extends React.Component{
             <div>
                 <h1>Hello World.</h1>
                 <p>It is {this.state.date.toLocaleTimeString()}.</p>
+                <p>{this.state.comment}</p>
             </div>
         );
     }
