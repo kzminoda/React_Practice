@@ -12,9 +12,9 @@ class FlavorForm extends React.Component{
     }
 
     handleChange(e){
-        this.setState = {
+        this.setState({
             value: e.target.value
-        };
+        });
         console.log('hChange: ' + this.state.value + ' ' + e.target.value);
     }
 
