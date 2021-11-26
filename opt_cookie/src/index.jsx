@@ -19,9 +19,11 @@ const TestCookie = () => {
     const handleChange = (e) => {
       setName(e.target.value);
     };
+
     const handleDelete = () => {
       removeCookie("name");
     };
+    
     const handleSubmit = () => {
       setCookie("name", name);
     };
