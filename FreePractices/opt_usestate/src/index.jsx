@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
 const TestUS = () => {
@@ -26,6 +26,10 @@ const TestUS2 = () => {
     const Cdown = () => {
         setCount(prevState => prevState -1);
     };
+
+    useEffect(() => {
+        console.log('Current Count: ' + count);
+    }, [count]);
 
     return (
         <div>
