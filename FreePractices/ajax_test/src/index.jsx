@@ -12,7 +12,7 @@ class DisplayData extends React.Component{
     }
 
     componentDidMount = () => {
-        fetch("http://10.78.102.84/ofts/tools/test/count.php")
+        fetch("<<URL>>")
         .then(res => res.json())
         .then(
             (result) => {
