@@ -21,10 +21,17 @@ const ComparingDate = () => {
     );
 }
 
+const UseMoment = () => {
+    const now = moment();
 
-
+    return (
+        <div>
+            {now.format()}
+        </div>
+    );
+}
 
 ReactDOM.render(
-    <ComparingDate />,
+    <UseMoment />,
     document.getElementById('root')
 )
