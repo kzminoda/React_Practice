@@ -99,7 +99,7 @@ const App = () => {
                         </div>
             </div>
             <hr />
-            <FuncProposal />
+            {/* <FuncProposal /> */}
         </>
     );
 }
